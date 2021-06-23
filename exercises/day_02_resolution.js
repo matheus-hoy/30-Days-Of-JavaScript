@@ -18,7 +18,7 @@ console.log(challenge.toLowerCase());
 console.log(challenge.substr(10));
 
 // 7 - Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
-console.log(challenge.substr(7));
+console.log('30 Days Of JavaScript'.substring(0, 2));
 
 // 8 - Check if the string contains a word Script using includes() method.
 console.log(challenge.includes('a'));
@@ -74,16 +74,18 @@ let trimmerRemoveSpace = trimmer.trim();
 console.log(trimmerRemoveSpace);
 
 // 21 - Use startsWith() method with the string 30 Days Of JavaScript and make the result true.
-let starts = '30 Days Of JavaScript.';
+const starts = '30 Days Of JavaScript.';
 console.log(starts.startsWith('30'));
 
 // 22 - Use endsWith() method with the string 30 Days Of JavaScript and make the result true.
-
-// // let starts = '30 Days Of JavaScript.';
-// // console.log(starts.endsWith('JavaScript'));
+const sring2 = '30 Days Of JavaScripto.';
+console.log(sring2.endsWith('JavaScripto.'));
 
 // 23 - Use match() method to find all the a’s in 30 Days Of JavaScript.
+console.log(sring2.match('a'));
 
 // 24 - Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'.
+console.log(sring2.concat(starts));
 
 // 25 - Use repeat() method to print 30 Days Of JavaScript 2 times.
+console.log(sring2.repeat(2));
