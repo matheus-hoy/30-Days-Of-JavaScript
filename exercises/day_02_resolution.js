@@ -21,7 +21,7 @@ console.log(challenge.substr(10));
 console.log('30 Days Of JavaScript'.substring(0, 2));
 
 // 8 - Check if the string contains a word Script using includes() method.
-console.log(challenge.includes('a'));
+console.log(challenge.includes('Script'));
 
 // 9 - Split the string into an array using split() method.
 console.log(challenge.split(''));
