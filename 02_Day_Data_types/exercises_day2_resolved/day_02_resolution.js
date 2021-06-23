@@ -83,7 +83,7 @@ const sring2 = '30 Days Of JavaScripto.';
 console.log(sring2.endsWith('JavaScripto.'));
 
 // 23 - Use match() method to find all the a’s in 30 Days Of JavaScript.
-const result1 = sring2.match('a');
+const result1 = sring2.match(/a/gi);
 console.log(result1);
 
 // 24 - Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'.
