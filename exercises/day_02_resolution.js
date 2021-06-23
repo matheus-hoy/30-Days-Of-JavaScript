@@ -27,7 +27,7 @@ console.log(challenge.includes('Script'));
 console.log(challenge.split(''));
 
 // 10 - Split the string 30 Days Of JavaScript at the space using split() method.
-console.log(challenge.split('')); //????????
+console.log(challenge.split(' '));
 
 // 11 - 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
 let empresas = ['Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'];
