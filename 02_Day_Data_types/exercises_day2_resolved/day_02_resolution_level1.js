@@ -90,6 +90,6 @@ console.log(result1);
 const result2 = sring2.concat(starts);
 console.log(result2);
 
-// 25 - Use repeat() method to print 30 Days Of JavaScript 2 times.
+// 25 - Use repeat() method to print 30 Days Of JavaScript 2 times
 const result3 = sring2.repeat(2);
 console.log(result3);
