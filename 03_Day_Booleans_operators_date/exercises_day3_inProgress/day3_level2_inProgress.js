@@ -46,13 +46,13 @@ console.log('Circunferencia do circulo: ', circumfDoCirculo);
 // 9 - Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 const horasSemanais = prompt('Insira as horas semanais: ');
 const valorHora = prompt('Insira o valor hora: ');
-let ganhoSemanal = horasSemanais * valorHora;
+const ganhoSemanal = horasSemanais * valorHora;
 
 console.log('Seu ganho semanal é de: ', ganhoSemanal);
 // // ******************* (USE IN MAIN.JS) *********************
 
 // 10 - If the length of your name is greater than 7 say, your name is long else say your name is short.
-let insertName = prompt('Insira seu nome: ');
+const insertName = prompt('Insira seu nome: ');
 if (insertName.length > 7) {
   console.log('Seu nome é LONGO!');
 } else {
@@ -61,8 +61,8 @@ if (insertName.length > 7) {
 // // ******************* (USE IN MAIN.JS) *********************
 
 // 11 - Compare your first name length and your family name length and you should get this output.
-let firstName = 'Asabeneh';
-let lastName = 'Yetayeh';
+const firstName = 'Asabeneh';
+const lastName = 'Yetayeh';
 if (firstName.length > lastName) {
   console.log(
     'Your first name',
@@ -83,11 +83,11 @@ if (firstName.length > lastName) {
 let minhaIdade = prompt('Minha idade = ');
 let tuaIdade = prompt('Sua idade = ');
 
-console.log(`Sua idade É ${minhaIdade - yourAge} maior que a minha !`);
+console.log(`Sua idade É ${minhaIdade - tuaIdade} maior que a minha !`);
 // // ******************* (USE IN MAIN.JS) *********************
 
 // 13 - Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
-let birtYear = 2005;
+const birtYear = 2005;
 year = 2021 - birtYear;
 
 if (year >= 18) {
