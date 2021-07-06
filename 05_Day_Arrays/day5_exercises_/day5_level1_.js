@@ -104,7 +104,11 @@ if (itCompanies.includes('Startaideia')) {
 }
 
 // 14 - Filter out companies which have more than one 'o' without the filter method
-
+for (let i = 0; i < itCompanies.length; i++) {
+  if (itCompanies[i].includes('oo')) {
+    console.log("companias com mais de um 'o':", itCompanies[i]);
+  }
+}
 // 15 - Sort the array using sort() method
 console.log(itCompanies.sort());
 
