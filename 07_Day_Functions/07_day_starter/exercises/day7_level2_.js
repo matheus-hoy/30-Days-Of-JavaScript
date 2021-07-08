@@ -111,7 +111,7 @@ function sumOfOdds(numberArr) {
   }
   return sum;
 }
-sumOfOdds([1, 2, 3]);
+// sumOfOdds([1, 2, 3]);
 // 12 - Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
 function numberEvens(numberEven) {
   let sum = 0;
@@ -124,6 +124,7 @@ function numberEvens(numberEven) {
   return sum;
 }
 // console.log(numberEvens([1, 2, 3, 4, 5]));
+
 // 13 - Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
 // evensAndOdds(100);
 // The number of odds are 50.
@@ -132,15 +133,102 @@ function numberEvens(numberEven) {
 // 14 - Write a function which takes any number of arguments and return the sum of the arguments
 // sum(1, 2, 3) // -> 6
 // sum(1, 2, 3, 4) // -> 10
+function sumOfAnyNumbers(...args) {
+  let sum = 0;
+  for (let i = 0; i < args.length; i++) {
+    sum = sum + args[i];
+  }
+  return sum;
+}
+// console.log(sumOfAnyNumbers(1, 2, 3, 5));
 
 // 15 - Writ a function which generates a randomUserIp.
+function randomUserIp() {
+  let ip =
+    Math.floor(Math.random() * 255) +
+    1 +
+    '.' +
+    Math.floor(Math.random() * 255) +
+    '.' +
+    Math.floor(Math.random() * 255) +
+    '.' +
+    Math.floor(Math.random() * 255);
+  return ip;
+}
+// console.log(randomUserIp());
 
 // 16 - Write a function which generates a randomMacAddress
+function randomMacAddress() {
+  const colours = new Array(
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    'A',
+    'B',
+    'C',
+    'D',
+    'E',
+    'F'
+  );
+  partA = new Array(1);
+  partB = new Array(1);
+  partC = new Array(1);
+  partD = new Array(1);
+  partE = new Array(1);
+  partF = new Array(1);
+  macAddress = '';
+  for (i = 0; i < 2; i++) {
+    partA[i] = colours[Math.round(Math.random() * 14)];
+  }
+  for (i = 0; i < 2; i++) {
+    partB[i] = colours[Math.round(Math.random() * 14)];
+  }
+  for (i = 0; i < 2; i++) {
+    partC[i] = colours[Math.round(Math.random() * 14)];
+  }
+  for (i = 0; i < 2; i++) {
+    partD[i] = colours[Math.round(Math.random() * 14)];
+  }
+  for (i = 0; i < 2; i++) {
+    partE[i] = colours[Math.round(Math.random() * 14)];
+  }
+  for (i = 0; i < 2; i++) {
+    partF[i] = colours[Math.round(Math.random() * 14)];
+  }
+  macAddress =
+    partA + ':' + partB + ':' + partC + ':' + partD + ':' + partE + ':' + partF;
+  return macAddress;
+}
+// console.log(randomMacAddress());
 
 // 17 - Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 // console.log(randomHexaNumberGenerator());
 // '#ee33df'
+function randomHexaNumberGenerator() {
+  const letters = '0123456789ABCDEF';
+  let hexaNumber = '#';
+  for (let i = 0; i < 6; i++) {
+    hexaNumber += letters[Math.floor(Math.random() * 16)];
+  }
+  return hexaNumber;
+}
+// console.log(randomHexaNumberGenerator());
 
 // 18 - Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+function userIdGenerator() {
+  let id = '';
+  const possibleChar =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  for (let i = 0; i < 7; i++) {
+    id += possibleChar.charAt(Math.floor(Math.random() * possibleChar.length));
+  }
+  return id;
+}
 // console.log(userIdGenerator());
-// 41XTDbE
